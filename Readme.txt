@@ -46,7 +46,8 @@ Uninstalling is as simple as deactivating the plugin.
 
 == Screenshots ==
 
-1. screenshot-1.gif
+1. Website Example
+2. Dashboard Example.
 
 == Frequently Asked Questions ==
 
