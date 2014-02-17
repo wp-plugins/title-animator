@@ -1,10 +1,10 @@
 <?php
 /*
 Plugin Name: Title Animator
-Plugin URI: http://arkapravamajumder.com
+Plugin URI: https://wordpress.org/plugins/title-animator/
 Description: Animated Title (Title tag) in Wordpress.
 Version:1.0
-Author: Arkaprava Majublinkmder
+Author: Arkaprava Majumder
 Author URI: http://arkapravamajumder.com
 License: GPL
 */
@@ -16,12 +16,13 @@ class TitleAnimator
     {
         add_action('admin_menu',array(&$this,'tr_dashboard'));
         add_action('wp_enqueue_scripts',array(&$this,'tr_jsintegrate'));
-	register_activation_hook( __FILE__, array( &$this, 'tr_activation' ) );
-	register_deactivation_hook( __FILE__, array( &$this, 'tr_deactivation' ) );
+		add_action('admin_enqueue_scripts',array(&$this,'tr_jsintegrate'));
+		register_activation_hook( __FILE__, array( &$this, 'tr_activation' ) );
+		register_deactivation_hook( __FILE__, array( &$this, 'tr_deactivation' ) );
     }
     function tr_activation()
     {
-	update_option( 'tr_radio','marquee' ); 
+		update_option( 'tr_radio','marquee' ); 
     }
     function tr_dashboard()
     {
@@ -60,7 +61,7 @@ class TitleAnimator
     }
     function tr_deactivation()
     {
-	delete_option( 'tr_radio' ); 
+		delete_option( 'tr_radio' ); 
     }
 }
 new TitleAnimator;
