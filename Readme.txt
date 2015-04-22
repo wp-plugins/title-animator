@@ -2,7 +2,7 @@
 Contributors: arkapravamajumder
 Tags: title, title rotator, title animator, title tag
 Requires at least: 2.8
-Tested up to: 3.8.1
+Tested up to: 4.2
 Stable tag: trunk
 License: GPL or later
 
@@ -10,6 +10,8 @@ Animate your website title with five different effects, lightweighted & easy ins
 
 == Description ==
 Animate your website title with five different effects, lightweighted & easy installation.
+
+Plugin is based on title.js ( http://arkaindas.github.io/titlejs/ )
 
 
 Demo:
@@ -29,9 +31,8 @@ Change Effects From Settings--> Title Animator
  
 Developed By : 
 
-Arkaprava Majumder (http://arkapravamajumder.com)
+Arkaprava Majumder (http://coderexample.com)
 
-Amit Saha (http://developeramit.com)
 
 == Installation ==
 
